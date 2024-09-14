@@ -16,6 +16,8 @@ html {
       sans-serif;
   }
 
+/* What's this do? No clue! But it works! I wish I could read this shit, trust me! */
+
 .blink {
     animation: blink 4s ease-in-out infinite;
 }
