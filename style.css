@@ -9,12 +9,25 @@ html {
     width: 100%;
     height: 100%;
   }
-  body {
+body {
     justify-content: center;
     align-items: center;
     font-family: "MS PGothic", "ＭＳ Ｐゴシック", Georgia, Arial, Helvetica,
       sans-serif;
   }
+
+#mobile-notification {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffdddd;
+    color: #333;
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+}
 
 /* What's this do? No clue! But it works! I wish I could read this shit, trust me! */
 
