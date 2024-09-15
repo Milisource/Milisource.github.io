@@ -1,20 +1,34 @@
 @charset "UTF-8";
+/* We need this to create the black out effect for mobile users */
 #rectangle{
-    width:1980px;
-    height:1020px;
+    width:900px;
+    height:900px;
     background:black;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Stop the a tag from painting over the blink anim */
+a {
+  text-decoration: none;
+  animation: blink 4s ease-in-out infinite;
+  color: inherit;
 }
 
 html {
     width: 100%;
     height: 100%;
   }
+
 body {
     justify-content: center;
     align-items: center;
     font-family: "MS PGothic", "ＭＳ Ｐゴシック", Georgia, Arial, Helvetica,
       sans-serif;
   }
+
+/* I'll be real I coppied this straight from ChatGPT idk wtf this does and I don't need to know (yet)
+Hey so did you know forshadowing is a- */
 
 #mobile-notification {
     display: none;
@@ -29,7 +43,7 @@ body {
     z-index: 1000;
 }
 
-/* What's this do? No clue! But it works! I wish I could read this shit, trust me! */
+/* Blink animation, making sure they're painted properly */
 
 .blink {
     animation: blink 4s ease-in-out infinite;
